@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --step--2: clamp(0.91rem, calc(0.89rem + 0.1vw), 0.96rem);
+  --step--1: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.2rem);
+  --step-0: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+  --step-1: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
+  --step-2: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
+  --step-3: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+  --step-4: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem);
+  --step-5: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
+  --bg-color: #070707;
+  --text-color: #fff;
+  --main-color: #2b55fd;
+  --info-color: #f2f2f2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  color: white;
+}
+
+.open-menu {
+  color: red;
+}
+.container {
+  --max-width: 1110px;
+  --container-padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+  margin-inline: auto;
+}
+
+.padding-section {
+  padding-block: 5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+.header .header__navbar {
+  height: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+  height: 100%;
+}
+
+.navbar .navbar__brand img:hover {
+  cursor: pointer;
+}
+
+.navbar .navbar__list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 22px;
+}
+
+.navbar .navbar__list li {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .navbar__list a {
+  font-size: var(--step--2);
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.navbar .navbar__list a:hover {
+  color: var(--main-color);
+  transition: all 0.5s ease;
+}
+
+.navbar .navbar__cart {
+  font-size: var(--step--1);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.navbar .navbar__menu {
+  display: flex;
+  gap: 4px;
+}
+
+.navbar .navbar__menu i {
+  cursor: pointer;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.navbar .navbar__menu i:hover {
+  color: var(--main-color);
+  transition: all 0.5s ease;
+}
+
+.navbar .navbar__menu i:active {
+  color: var(--info-color);
+  transition: all 0.5s ease;
+}
+
+.navbar .navbar__menu i:last-child {
+  display: none;
+}
+
+@media (max-width: 379px) {
+  .navbar .navbar__brand img {
+    width: 140px;
+  }
+}
+
+.login .login__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__content h2 {
+  font-size: var(--step-0);
+  text-align: center;
+}
+
+.login__form {
+  border-radius: 3px;
+  padding: 20px;
+  width: 60%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form-col {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.btn-login {
+  width: fit-content;
+  padding: 5px;
+  background-color: var(--main-color);
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.btn-register {
+  width: fit-content;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+@media (max-width: 605px) {
+  .login__form {
+    padding: 0;
+    width: auto;
+  }
+}
+
+.footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}

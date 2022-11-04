@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MovieStation es un sitio web de alquiler de cine a través de una tienda virtual."
+    />
+    <title>MovieStation</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__navbar">
+          <nav class="navbar">
+            <div class="navbar__brand">
+              <a href="/">
+                <img src="./assets/images/logo.svg" alt="MovieStation logo" />
+              </a>
+            </div>
+            <div class="navbar__list">
+              <ul role="list" class="open-closed">
+                <li><a class="navbar-link" href="/">Home</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="login padding-section">
+      <div class="container">
+        <div class="login__content">
+          <h2>Registro</h2>
+          <form class="login__form">
+            <div class="form-row">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" />
+            </div>
+            <div class="form-row">
+              <label for="Apellido">Apellido</label>
+              <input type="text" name="Apellido" id="Apellido" />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-row">
+              <label for="password">Contraseña</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div class="form-col">
+              <button type="button" class="btn-login">Registrarse</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <p>© 2022 MovieStation desarrollado por Mateo Peluzo</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
