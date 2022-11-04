@@ -18,4 +18,4 @@
 
 - [x] 👉 OPCIONAL: Si conocen alguna API de Productos/Noticias que quieran utilizar en lugar de traer los datos desde un archivo de JS, pueden hacerlo.
 
-- [ ] 👉 Deberán entregar el repositorio de Github, con el Vercel de la página vinculado.
+- [x] 👉 Deberán entregar el repositorio de Github, con el Vercel de la página vinculado.
